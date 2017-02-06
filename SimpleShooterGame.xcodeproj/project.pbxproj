@@ -8,19 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		E8310F971E3BC26F00592BC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8310F961E3BC26F00592BC5 /* AppDelegate.swift */; };
-		E8310F991E3BC26F00592BC5 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E8310F981E3BC26F00592BC5 /* GameScene.sks */; };
 		E8310F9B1E3BC26F00592BC5 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = E8310F9A1E3BC26F00592BC5 /* Actions.sks */; };
 		E8310F9D1E3BC26F00592BC5 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8310F9C1E3BC26F00592BC5 /* GameScene.swift */; };
 		E8310F9F1E3BC26F00592BC5 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8310F9E1E3BC26F00592BC5 /* GameViewController.swift */; };
 		E8310FA21E3BC26F00592BC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8310FA01E3BC26F00592BC5 /* Main.storyboard */; };
 		E8310FA41E3BC26F00592BC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8310FA31E3BC26F00592BC5 /* Assets.xcassets */; };
 		E8310FA71E3BC26F00592BC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8310FA51E3BC26F00592BC5 /* LaunchScreen.storyboard */; };
+		E87EC67C1E427626002106F1 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E87EC67B1E427626002106F1 /* GameScene.sks */; };
+		E8B6A04A1E42596500F7395F /* TitleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B6A0491E42596500F7395F /* TitleScene.swift */; };
+		E8B6A04C1E42597900F7395F /* TitleScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E8B6A04B1E42597900F7395F /* TitleScene.sks */; };
+		E8CD06491E425604005D77C0 /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = E8CD06481E425604005D77C0 /* Explosion.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E8310F931E3BC26F00592BC5 /* SimpleShooterGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleShooterGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8310F961E3BC26F00592BC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E8310F981E3BC26F00592BC5 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		E8310F9A1E3BC26F00592BC5 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		E8310F9C1E3BC26F00592BC5 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		E8310F9E1E3BC26F00592BC5 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +30,10 @@
 		E8310FA31E3BC26F00592BC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8310FA61E3BC26F00592BC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8310FA81E3BC26F00592BC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E87EC67B1E427626002106F1 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		E8B6A0491E42596500F7395F /* TitleScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TitleScene.swift; path = ../TitleScene.swift; sourceTree = "<group>"; };
+		E8B6A04B1E42597900F7395F /* TitleScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TitleScene.sks; sourceTree = "<group>"; };
+		E8CD06481E425604005D77C0 /* Explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explosion.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +67,13 @@
 			isa = PBXGroup;
 			children = (
 				E8310F961E3BC26F00592BC5 /* AppDelegate.swift */,
-				E8310F981E3BC26F00592BC5 /* GameScene.sks */,
+				E8CD06481E425604005D77C0 /* Explosion.sks */,
+				E87EC67B1E427626002106F1 /* GameScene.sks */,
+				E8B6A04B1E42597900F7395F /* TitleScene.sks */,
 				E8310F9A1E3BC26F00592BC5 /* Actions.sks */,
 				E8310F9C1E3BC26F00592BC5 /* GameScene.swift */,
 				E8310F9E1E3BC26F00592BC5 /* GameViewController.swift */,
+				E8B6A0491E42596500F7395F /* TitleScene.swift */,
 				E8310FA01E3BC26F00592BC5 /* Main.storyboard */,
 				E8310FA31E3BC26F00592BC5 /* Assets.xcassets */,
 				E8310FA51E3BC26F00592BC5 /* LaunchScreen.storyboard */,
@@ -134,10 +143,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8310FA21E3BC26F00592BC5 /* Main.storyboard in Resources */,
-				E8310F991E3BC26F00592BC5 /* GameScene.sks in Resources */,
 				E8310FA41E3BC26F00592BC5 /* Assets.xcassets in Resources */,
 				E8310FA71E3BC26F00592BC5 /* LaunchScreen.storyboard in Resources */,
 				E8310F9B1E3BC26F00592BC5 /* Actions.sks in Resources */,
+				E87EC67C1E427626002106F1 /* GameScene.sks in Resources */,
+				E8CD06491E425604005D77C0 /* Explosion.sks in Resources */,
+				E8B6A04C1E42597900F7395F /* TitleScene.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +162,7 @@
 				E8310F9D1E3BC26F00592BC5 /* GameScene.swift in Sources */,
 				E8310F9F1E3BC26F00592BC5 /* GameViewController.swift in Sources */,
 				E8310F971E3BC26F00592BC5 /* AppDelegate.swift in Sources */,
+				E8B6A04A1E42596500F7395F /* TitleScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +287,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R52DFB482J;
 				INFOPLIST_FILE = SimpleShooterGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wu.andy.SimpleShooterGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -288,6 +301,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R52DFB482J;
 				INFOPLIST_FILE = SimpleShooterGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wu.andy.SimpleShooterGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -314,6 +328,7 @@
 				E8310FAD1E3BC26F00592BC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
