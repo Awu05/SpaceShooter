@@ -26,6 +26,8 @@ var isAlive = true
 
 var score = 0
 
+var hasChangedColor = true
+
 var textColorHUD = UIColor(red: 0.95, green: 0.95, blue: 0.95, alpha: 1.0)
 
 struct physicsCategory {
@@ -37,10 +39,17 @@ struct physicsCategory {
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
     
+    //var background = SKSpriteNode(imageNamed: "Background")
+    
     override func didMove(to view: SKView) {
         physicsWorld.contactDelegate = self
         
         self.backgroundColor = UIColor.purple
+        /*
+        background.zPosition = 0
+        background.position = CGPoint(x: frame.size.width / -2, y: frame.size.height / -2)
+        addChild(background)
+        */
         
         spawnPlayer()
         spawnScoreLabel()
@@ -110,6 +119,27 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             enemySpeed = 1.0
             enemySpawnRate = 0.1
         }
+        
+        if (score % 5 == 0) && (score > 0) && (hasChangedColor == true) {
+            changeBackgroundColor()
+            hasChangedColor = false
+        }
+    }
+    
+    func changeBackgroundColor() {
+        
+        let changeBackground = SKAction.run {
+            let randR = CGFloat(Float(arc4random()) / Float(UINT32_MAX))
+            let randG = CGFloat(Float(arc4random()) / Float(UINT32_MAX))
+            let randB = CGFloat(Float(arc4random()) / Float(UINT32_MAX))
+            
+            self.backgroundColor = UIColor(red: randR, green: randG, blue: randB, alpha: 1)
+        }
+        
+        let sequence = SKAction.sequence([changeBackground])
+        
+        self.run(SKAction.repeat(sequence, count: 1))
+        
     }
     
     func spawnPlayer(){
@@ -291,6 +321,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     func updateScore(){
         scoreLabel.text = "Score: \(score)"
+        hasChangedColor = true
     }
     
     func hideLabel(){
